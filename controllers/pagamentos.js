@@ -32,11 +32,13 @@ module.exports = (app) => {
             if(erro){
                 console.log('Erro ao inserir no banco: ' + erro);
                 
-                res.status(400).send(erro);
+                res.status(500).send(erro);
                 return;
             }
             console.log('pagamento criado');
-            res.json(pagamento);
+            res.location('/pagamentos/pagamento/' + resultado.insertId);
+
+            res.status(201).json(pagamento);
             
         });
 

@@ -9,6 +9,7 @@ module.exports = () => {
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json());
 
+    //Obrigatoriamente logo apos o bodyParser
     app.use(expressValidator());
 
     consign()
