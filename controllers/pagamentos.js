@@ -3,6 +3,30 @@ module.exports = (app) => {
         res.send('OK.');
     });
 
+
+    app.put('/pagamentos/pagamento/:id', (req, res) => {
+
+        let pagamento = {};
+        let id = req.params.id;
+
+        pagamento.id = id;
+        pagamento.status = 'CONFIRMADO';
+
+        let connection = app.persistencia.connectionFactory();
+        let pagamentoDao = new app.persistencia.PagamentoDao(connection);
+
+        pagamentoDao.atualiza(pagamento, (erro) => {
+            if(erro) {
+                res.status(500).send(erro);
+                return;
+            }
+
+            res.send(pagamento);
+        });
+
+    });
+
+
     app.post('/pagamentos/pagamento', (req, res) => {
 
         req.assert("forma_de_pagamento", 
