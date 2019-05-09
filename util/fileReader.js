@@ -1,3 +1,4 @@
+//usar a stream (pq é melhor no node) >
 const fs = require('fs');
 
 fs.readFile("imagem.jpg", (erro, buffer) => {
