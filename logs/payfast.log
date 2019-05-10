@@ -1,0 +1,5 @@
+{"message":"::1 - - [10/May/2019:01:01:53 +0000] \"GET /pagamentos/pagamento/81 HTTP/1.1\" 200 156\n","level":"info"}
+{"message":"::1 - - [10/May/2019:01:01:53 +0000] \"GET /pagamentos/pagamento/81 HTTP/1.1\" 200 156\n","level":"info"}
+{"message":"::1 - - [10/May/2019:01:01:54 +0000] \"GET /pagamentos/pagamento/81 HTTP/1.1\" 200 156\n","level":"info"}
+{"message":"::1 - - [10/May/2019:01:01:54 +0000] \"GET /pagamentos/pagamento/81 HTTP/1.1\" 200 156\n","level":"info"}
+{"message":"::1 - - [10/May/2019:01:01:55 +0000] \"GET /pagamentos/pagamento/81 HTTP/1.1\" 200 156\n","level":"info"}
